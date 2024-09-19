@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+html , body {
+    width: 100%;
+    height: 100%;
+}
+.page1 {
+    width: 100vw;
+    height: 100vh;
+}
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+/* Navigation Menu Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.navbar .logo {
+    font-size: 24px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+}
+
+.menu-toggle.open .bar:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 8px;
+}
+
+.menu-toggle.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.open .bar:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -8px;
+}
+
+
+
+/* Fullscreen Menu Styles */
+.fullscreen-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.fullscreen-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.fullscreen-menu ul li {
+    margin: 20px 0;
+}
+
+.fullscreen-menu ul li a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+.page1 {
+    width: 100vw;
+    height: 10vh;
+}
+.page1 h4 {
+    color: white;
+    text-align: center;
+    padding-top: 2vw;
+    font-size: 1.7vw;
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 1));
+
+}
+.page1 h1 {
+    color: white;
+    font-size: 6vw;
+    padding-top: 10vw;
+    padding-left: 3vw;
+    font-family: 'Zodiak', serif;
+    font-weight: 500;
+    opacity: 0.9;
+
+}
+
+.page2 {
+    width: 100vw;
+}
+.page2 h3 {
+    color: rgb(189, 172, 172);
+    font-size: 3vw;
+    text-align: center;
+    padding-top: 31vw;
+    font-weight: 400;
+    font-family: 'Zodiak', serif;
+
+
+}
+.projects {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.project1 {
+    width: 400px;
+    height: 300px;
+    background-color: gray;
+    margin-top: 7vw;
+    margin-left: 1vw;
+    opacity: 0.9;
+}
+.project1:hover{
+    opacity: 1;
+}
+/* .project1 img:hover {
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 1));
+
+} */
+.project1 h4 {
+    font-size: 1.5vw;
+    color: white;
+    margin-top: 1vw;
+    font-family: 'Zodiak', serif;
+    opacity: 0.9;
+
+    
+}
+.lineline {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin-top: 8vw;
+    opacity: 0.2;
+}
+.page3 {
+    width: 100vw;
+    margin-top: 9vw;
+}
+.page3 h3 {
+    color: white;
+    text-align: center;
+    padding-top: 2vw;
+    font-size: 3vw;
+    font-weight: 500;
+    opacity: 0.8;
+    font-family: 'Zodiak', serif;
+
+}
+.content {
+    margin-top: 5vw;
+}
+.content1 {
+    width: 100vw;
+    height: 37vh;
+    border-top: 1px  solid white;
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+.content1:hover{
+    background-color: rgba(10, 10, 10, 0.986);
+}
+.text {
+    margin-top: -3vw;
+}
+.text h2 {
+    color: white;
+    margin-left: 4vw;
+    font-size: 3vw;
+    font-weight: 200;
+    font-family: 'Zodiak', serif;
+
+
+}
+.text h5 {
+    color: gray;
+    margin-left: 4vw;
+    font-size: 1.6vw;
+    font-weight: 100;
+    
+
+
+    
+}
+.arrow a:hover{
+    background-color: rgba(255, 255, 255, 0.24);
+}
+.arrow i:hover{
+    color: white;
+}
+.bigvideo video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+    .navbar .nav-links {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .fullscreen-menu.active {
+        display: flex;
+    }
+    .page1 h4 {
+        color: white;
+        text-align: center;
+        padding-top: 3vw;
+        font-size: 3vw;
+        mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 1));
+    
+    }
+    .page1 h1 {
+        color: white;
+        font-size: 9.4vw;
+        padding-top: 20vw;
+        padding-left: 5vw;
+
+    }
+    .page1 video {
+        width: 100vw;
+        height: 90vh;
+        object-fit: cover;
+        padding-top: 6vw;
+    }
+    .page2 h3 {
+        color: gray;
+        font-size: 7.2vw;
+        text-align: center;
+        padding-top: 52vw;
+    }
+    .projects {
+        flex-direction: column;
+        gap: 80px;
+    }
+    .project1 h4 {
+        padding-left: 1vw;
+        font-size: 5vw;
+        color: white;
+        font-family: 'Zodiak', serif;
+        font-weight: 100;
+
+        
+    }
+    .page3 h3 {
+        color: white;
+        text-align: center;
+        padding-top: 5vw;
+        font-size: 7vw;
+        font-weight: 500;
+        opacity: 0.8;
+
+    }
+    .content {
+        margin-top: 5vw;
+    }
+    .content1 {
+        width: 100vw;
+        height: 30vh;
+        border-top: 1px  solid rgba(255, 255, 255, 0.418);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.493);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+    
+    }
+    .text {
+        margin-top: -3vw;
+    }
+    .text h2 {
+        color: white;
+        margin-left: 4vw;
+        font-size: 6vw;
+        font-weight: 200;
+        font-family: 'Zodiak', serif;
+        opacity: 0.8;
+    
+    
+    }
+    .text h5 {
+        color: gray;
+        margin-left: 4vw;
+        font-size: 3vw;
+        font-weight: 100;
+        display: none;
+        
+    
+    
+        
+    }
+    .arrow a:hover{
+        background-color: rgba(255, 255, 255, 0.938);
+        z-index: -1;
+    }
+    .arrow i:hover{
+        color: black;
+        z-index: 99;
+    }
+}

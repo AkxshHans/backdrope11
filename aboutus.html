@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backdrope - About Us</title>
+    <link rel="stylesheet" href="aboutus.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=chillax@1&f[]=panchang@400,800,1&f[]=technor@900&f[]=clash-display@200,500&f[]=rosaline@400&f[]=pencerio@50&f[]=rajdhani@400&f[]=rx-100@400&f[]=switzer@800&f[]=general-sans@200&f[]=stardom@400&f[]=satoshi@500&f[]=cabinet-grotesk@100&f[]=telma@500,700,900&f[]=zodiak@301,400&f[]=ranade@700&f[]=clash-grotesk@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+       <a style="text-decoration: none; color: white;" href="index.html">
+
+           <div class="logo">Backdrope</div>
+       </a>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- Fullscreen Menu -->
+    <div class="fullscreen-menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+
+    <div class="main">
+        <div class="page1">
+            <div class="ourstory">
+                <h3>Our Story: <br> From Passion to Profession</h3>
+                <h5>Backdrope began as a dream, driven by the passion and vision of Madhvan, a mechanical engineer who decided to take a leap of faith and follow his heart into the world of photography. After leaving a stable engineering career, Madhvan sought to channel his creativity into something that truly resonated with him—capturing life’s moments through the lens of a camera. But the journey wasn’t meant to be a solo one.
+
+                    Realizing the power of collaboration, Madhvan reached out to a group of like-minded friends, each equally passionate and already freelancing in various creative fields—photography, cinematography, designing, digital marketing, website development, and editing. He pitched them the idea of uniting under one umbrella to provide a comprehensive suite of creative services. The response was overwhelming, as every friend immediately said "yes" to joining this collective vision.
+                    
+                    With that, Backdrope was born. Our team is composed of professionals who have turned their individual passions into a shared mission: to provide end-to-end services for projects, events, special occasions, and brand building. We don’t just take on projects; we immerse ourselves in them, ensuring that each one reflects our deep commitment to quality and client satisfaction.</h5>
+            </div>
+
+
+
+            <div class="ourstory">
+                <h3>The Backdrope Promise</h3>
+                <h5>At Backdrope, our vision is simple: to turn creativity into an experience that leaves a lasting impression. Whether it’s capturing the most important moments in life, building brands from the ground up, or designing a compelling digital presence, we aim to deliver exceptional quality in everything we do.
+
+                    We are not just a service provider—we are your partners in crafting memorable experiences. Our ultimate goal is to grow, not only as professionals but also by continuously elevating the experience for every client we work with. With passion as our driving force, we are here to ensure that every collaboration is special, meaningful, and a step toward realizing your dreams.</h5>
+            </div>
+
+
+
+            <div class="team">
+                <h1>The Dreamers of Backdrope</h1>
+
+                <div class="members">
+                    <div class="member1">
+                        <img src="manpreet.jpg" alt="">
+                        <h3>Manpreet Singh</h3> 
+                        <br>
+                    </div>
+                    <h5 >
+                        Hi, I’m Manpreet, a professional portrait and wedding photographer. With a keen eye for detail and a dedication to delivering high-quality results, I strive to capture the most genuine and beautiful moments. My approach is all about making my clients feel at ease, ensuring every session is fun, relaxed, and memorable. Photography is not just my job—it's what I love, and I’m excited to help tell your story through my lens.</h5>
+                </div>
+
+
+                <div class="members">
+                    <div class="member1">
+                        <img src="akash22.jpg" alt="">
+                        <h3>Akash Hans</h3> 
+                        <br>
+                    </div>
+                    <h5 >
+                        Hey, I'm Akash. I’m a web developer dedicated to crafting cutting-edge, modern websites that take your online presence to the next level. With animated, interactive elements, I create stunning digital experiences that truly elevate your business. Being part of the 'Backdrope' team, I’m driven to push boundaries and take our company to new heights through my passion for innovation and excellence.</h5>
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const fullscreenMenu = document.querySelector('.fullscreen-menu');
+
+    menuToggle.addEventListener('click', () => {
+        const isOpen = fullscreenMenu.classList.toggle('active');
+        menuToggle.classList.toggle('open', isOpen);
+    });
+
+    const slides = document.querySelector('.slides');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+    const totalSlides = document.querySelectorAll('.slide').length;
+    let currentIndex = 0;
+
+    function updateSlidePosition() {
+        slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex === 0) ? totalSlides - 1 : currentIndex - 1;
+        updateSlidePosition();
+    });
+
+    nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex === totalSlides - 1) ? 0 : currentIndex + 1;
+        updateSlidePosition();
+    });
+});
+
+    </script>
+</body>
+</html>
